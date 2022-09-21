@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8"><script async="" src="contato_archivos/gtm.js"></script>
+<script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script>
+<script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contacto KeepCoding | KeepCoding Tech School</title>
+<link rel="preload" as="style" href="contato_archivos/ed5d19eaf7f5.google-fonts.css">
+<link rel="stylesheet" href="contato_archivos/ed5d19eaf7f5.google-fonts.css" media="all" onload="this.media='all'">
+<noscript>
+	<link rel="stylesheet" href="https://keepcoding.io/wp-content/cache/perfmatters/keepcoding.io/fonts/ed5d19eaf7f5.google-fonts.css"/></noscript>
+<meta name="description" content="¡Ponte en contacto con nosotros! Estamos listos para resolver tus dudas.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://keepcoding.io/contacto/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Contacto KeepCoding | KeepCoding Tech School">
+<meta property="og:description" content="¡Ponte en contacto con nosotros! Estamos listos para resolver tus dudas.">
+<meta property="og:url" content="https://keepcoding.io/contacto/">
+<meta property="og:site_name" content="KeepCoding Tech School">
+<meta property="article:publisher" content="https://www.facebook.com/keepcoding.training">
+<meta property="article:author" content="https://www.facebook.com/grokkeepcoding/">
+<meta property="og:updated_time" content="2022-01-24T17:42:32+02:00">
+<meta property="og:image" content="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png">
+<meta property="og:image:secure_url" content="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png">
+<meta property="og:image:width" content="230">
+<meta property="og:image:height" content="230">
+<meta property="og:image:alt" content="kler cabrera keepcoding">
+<meta property="og:image:type" content="image/png">
+<meta property="article:published_time" content="2022-01-07T18:53:36+02:00">
+<meta property="article:modified_time" content="2022-01-24T17:42:32+02:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contacto KeepCoding | KeepCoding Tech School">
+<meta name="twitter:description" content="¡Ponte en contacto con nosotros! Estamos listos para resolver tus dudas.">
+<meta name="twitter:site" content="@KeepCoding_">
+<meta name="twitter:creator" content="@KeepCoding_">
+<meta name="twitter:image" content="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png">
+<meta name="twitter:label1" content="Tiempo de lectura">
+<meta name="twitter:data1" content="Menos de un minuto">
+<script type="application/ld+json" class="rank-math-schema-pro">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://keepcoding.io/#place","address":{"@type":"PostalAddress","streetAddress":"M\u00e9ndez \u00c1lvaro, 20","addressLocality":"Madrid","addressRegion":"Madrid","postalCode":"28045","addressCountry":"Espa\u00f1a"}},{"@type":["EducationalOrganization","Organization"],"@id":"https://keepcoding.io/#organization","name":"KeepCoding Tech School","url":"https://keepcoding.io","email":"cursos@keepcoding.io","address":{"@type":"PostalAddress","streetAddress":"M\u00e9ndez \u00c1lvaro, 20","addressLocality":"Madrid","addressRegion":"Madrid","postalCode":"28045","addressCountry":"Espa\u00f1a"},"logo":{"@type":"ImageObject","@id":"https://keepcoding.io/#logo","url":"https://keepcoding.io/wp-content/uploads/2022/01/logo-keepcoding-knowledgegraph-100-1.jpeg","contentUrl":"https://keepcoding.io/wp-content/uploads/2022/01/logo-keepcoding-knowledgegraph-100-1.jpeg","caption":"KeepCoding Tech School","inLanguage":"es","width":"1000","height":"1000"},"contactPoint":[{"@type":"ContactPoint","telephone":"+34916331779","contactType":"customer support"}],"location":{"@id":"https://keepcoding.io/#place"}},{"@type":"WebSite","@id":"https://keepcoding.io/#website","url":"https://keepcoding.io","name":"KeepCoding Tech School","publisher":{"@id":"https://keepcoding.io/#organization"},"inLanguage":"es"},{"@type":"ImageObject","@id":"https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png","url":"https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png","width":"200","height":"200","inLanguage":"es"},{"@type":"BreadcrumbList","@id":"https://keepcoding.io/contacto/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://keepcoding.io","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://keepcoding.io/contacto/","name":"Contacto KeepCoding"}}]},{"@type":"ContactPage","@id":"https://keepcoding.io/contacto/#webpage","url":"https://keepcoding.io/contacto/","name":"Contacto KeepCoding | KeepCoding Tech School","datePublished":"2022-01-07T18:53:36+02:00","dateModified":"2022-01-24T17:42:32+02:00","isPartOf":{"@id":"https://keepcoding.io/#website"},"primaryImageOfPage":{"@id":"https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png"},"inLanguage":"es","breadcrumb":{"@id":"https://keepcoding.io/contacto/#breadcrumb"}},{"@type":"Person","@id":"https://keepcoding.io/contacto/#author","name":"admin","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/be8f93fc8982c80402ac8dc3d9e57f90?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/be8f93fc8982c80402ac8dc3d9e57f90?s=96&amp;d=mm&amp;r=g","caption":"admin","inLanguage":"es"},"sameAs":["https://keepcoding.io"],"worksFor":{"@id":"https://keepcoding.io/#organization"}},{"headline":"Contacto KeepCoding | KeepCoding Tech School","description":"\u00a1Ponte en contacto con nosotros! Estamos listos para resolver tus dudas.","keywords":"contacto","@type":"Article","author":{"@id":"https://keepcoding.io/contacto/#author","name":"admin"},"datePublished":"2022-01-07T18:53:36+02:00","dateModified":"2022-01-24T17:42:32+02:00","name":"Contacto KeepCoding | KeepCoding Tech School","@id":"https://keepcoding.io/contacto/#schema-105519","isPartOf":{"@id":"https://keepcoding.io/contacto/#webpage"},"publisher":{"@id":"https://keepcoding.io/#organization"},"image":{"@id":"https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png"},"inLanguage":"es","mainEntityOfPage":{"@id":"https://keepcoding.io/contacto/#webpage"}}]}</script>
+
+<link rel="stylesheet" id="wp-block-library-css" href="contato_archivos/style.min.css" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="generate-widget-areas-css" href="contato_archivos/widget-areas.min.css" media="all">
+<link rel="stylesheet" id="generate-style-css" href="contato_archivos/main.min.css" media="all">
+<style id="generate-style-inline-css">
+body{background-color:#ffffff;color:var(--contrast);}
+a{color:var(--accent);}
+a{text-decoration:underline;}
+.entry-title a, .site-branding a, a.button, .wp-block-button__link, .main-navigation a{text-decoration:none;}
+a:hover, a:focus, a:active{color:var(--contrast);}
+.wp-block-group__inner-container{max-width:1200px;margin-left:auto;margin-right:auto;}
+.navigation-search{position:absolute;left:-99999px;
+	pointer-events:none;visibility:hidden;
+	z-index:20;width:100%;
+	top:0;
+	transition:opacity 100ms ease-in-out;
+	opacity:0;}
+.navigation-search.nav-search-active{left:0;right:0;pointer-events:auto;visibility:visible;opacity:1;}
+.navigation-search input[type="search"]{outline:0;border:0;vertical-align:bottom;line-height:1;opacity:0.9;
+	width:100%;z-index:20;border-radius:0;-webkit-appearance:none;height:60px;}
+.navigation-search input::-ms-clear{display:none;width:0;height:0;}
+.navigation-search input::-ms-reveal{display:none;width:0;height:0;}
+.navigation-search input::-webkit-search-decoration, 
+.navigation-search input::-webkit-search-cancel-button, 
+.navigation-search input::-webkit-search-results-button, 
+.navigation-search input::-webkit-search-results-decoration{display:none;}
+.gen-sidebar-nav .navigation-search{top:auto;bottom:0;}:root{
+	--contrast:#222222;
+	--contrast-2:#575760;
+	--contrast-3:#b2b2be;
+	--base:#f0f0f0;
+	--base-2:#f7f8f9;
+	--base-3:#ffffff;
+	--accent:#1e73be;}
+.has-contrast-color{color:#222222;}
+.has-contrast-background-color{background-color:#222222;}
+.has-contrast-2-color{color:#575760;}.has-contrast-2-background-color{background-color:#575760;}.has-contrast-3-color{color:#b2b2be;}.has-contrast-3-background-color{background-color:#b2b2be;}.has-base-color{color:#f0f0f0;}.has-base-background-color{background-color:#f0f0f0;}.has-base-2-color{color:#f7f8f9;}.has-base-2-background-color{background-color:#f7f8f9;}.has-base-3-color{color:#ffffff;}.has-base-3-background-color{background-color:#ffffff;}.has-accent-color{color:#1e73be;}.has-accent-background-color{background-color:#1e73be;}
+.main-navigation a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{font-family:inherit;font-weight:bold;font-size:0.9rem;}h2{font-weight:800;font-size:2rem;}body, button, input, select, textarea{font-family:Roboto, sans-serif;font-size:1.1rem;}body{line-height:1.4;}p{margin-bottom:0em;}.main-navigation .main-nav ul ul li a{font-family:Roboto, sans-serif;font-weight:500;font-size:0.8rem;letter-spacing:0px;}.inside-article{font-family:Mulish, sans-serif;font-weight:300;font-size:1.3rem;line-height:2rem;}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}
+.top-bar a:hover{color:#303030;}.site-header{background-color:var(--base-3);}.main-title a,.main-title a:hover{color:#ffffff;}.site-description{color:var(--contrast-2);}
+.main-navigation,.main-navigation ul ul{background-color:rgba(0,0,0,0.85);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:#ffffff;}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:var(--accent);background-color:#000000;}button.menu-toggle:hover,button.menu-toggle:focus{color:#ffffff;}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:#ff921e;}.navigation-search input[type="search"],
+	.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:#505050;background-color:#ffffff;opacity:1;}.main-navigation ul ul{background-color:#ffffff;}.main-navigation .main-nav ul ul li a{color:#292929;}
+	.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover > a,.main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"]) > a{color:#d9a925;background-color:#f3f3f3;}
+	.main-navigation .main-nav ul ul li[class*="current-menu-"] > a{color:#f79c26;}
+	.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:var(--base-3);}
+	.entry-title a{color:var(--contrast);}.entry-title a:hover{color:var(--contrast-2);}
+	.entry-meta{color:var(--contrast-2);}h2{color:#e79a18;}.sidebar .widget{background-color:var(--base-3);}
+	.footer-widgets{color:#ffffff;background-color:#171717;}.footer-widgets a{color:#ffffff;}
+	.footer-widgets a:hover{color:#fc915c;}.site-info{color:#ffffff;background-color:#000000;}
+	input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:var(--contrast);background-color:var(--base-2);border-color:var(--base);}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:var(--contrast);background-color:var(--base-2);border-color:var(--contrast-3);}
+	button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){
+		color:#ffffff;background-color:#55555e;}
+		button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}
+	@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:#ffffff;}}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 30px 0px 30px;}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:0px 40px 40px 40px;}
+	.site-main .wp-block-group__inner-container{padding:0px 40px 40px 40px;}
+	.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}
+	.entry-content .alignwide, body:not(.no-sidebar) 
+	.entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}
+	.sidebar .widget, .page-header, .widget-area .main-navigation, .site-main > *{margin-bottom:0px;}
+	.separate-containers .site-main{margin:0px;}
+	.both-right .inside-left-sidebar,.both-left .inside-left-sidebar{margin-right:0px;}
+	.both-right .inside-right-sidebar,.both-left .inside-right-sidebar{margin-left:0px;}
+	.separate-containers .featured-image{margin-top:0px;}
+	.separate-containers .inside-right-sidebar, .separate-containers .inside-left-sidebar{margin-top:0px;margin-bottom:0px;}
+	.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .menu-bar-item > a{padding-left:10px;padding-right:10px;line-height:90px;}
+	.main-navigation .main-nav ul ul li a{padding:8px 10px 8px 10px;}
+	.main-navigation ul ul{width:354px;}.navigation-search input[type="search"]{height:90px;}
+	.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:10px;}
+	.menu-item-has-children .dropdown-menu-toggle{padding-right:10px;}
+	.menu-item-has-children ul .dropdown-menu-toggle{padding-top:8px;padding-bottom:8px;margin-top:-8px;}
+	.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:10px;}
+	.widget-area .widget{padding:40px 40px 0px 40px;}
+	@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, 
+		.separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}
+		.site-main .wp-block-group__inner-container{padding:30px;}
+		.inside-top-bar{padding-right:30px;padding-left:30px;}
+		.inside-header{padding-right:30px;padding-left:30px;}
+		.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}
+		.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}
+		.inside-site-info{padding-right:30px;padding-left:30px;}
+		.entry-content .alignwide, body:not(.no-sidebar) 
+		.entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}
+		.one-container .site-main .paging-navigation{margin-bottom:0px;}}
+		
+		/* End cached CSS */
+
+.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:100%;}
+@media (max-width: 768px){
+	.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}
+	.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) 
+	.main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right 
+	.inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}
+		}
+.elementor-template-full-width .site-content{display:block;}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}
+.one-container.blog .dynamic-content-template:not(:last-child), 
+.one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}
+.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+.main-navigation .main-nav ul li a,.menu-toggle,.main-navigation .menu-bar-item > a{transition: line-height 300ms ease}
+.main-navigation.toggled .main-nav > ul{background-color: rgba(0,0,0,0.85)}.sticky-enabled .gen-sidebar-nav.is_stuck .main-navigation {margin-bottom: 0px;}
+.sticky-enabled .gen-sidebar-nav.is_stuck {z-index: 500;}.sticky-enabled .main-navigation.is_stuck {box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);}
+.navigation-stick:not(.gen-sidebar-nav) {left: 0;right: 0;width: 100% !important;}
+.both-sticky-menu .main-navigation:not(#mobile-header).toggled .main-nav > ul,
+.mobile-sticky-menu .main-navigation:not(#mobile-header).toggled .main-nav > ul,
+.mobile-header-sticky #mobile-header.toggled .main-nav > ul {position: absolute;left: 0;right: 0;z-index: 999;}
+.nav-float-right .navigation-stick {width: 100% !important;left: 0;}.nav-float-right .navigation-stick .navigation-branding {margin-right: auto;}
+.main-navigation.has-sticky-branding:not(.grid-container) 
+.inside-navigation:not(.grid-container) .navigation-branding{margin-left: 10px;}
+.page-hero{background-color:#8e44ad;text-align:right;}
+.page-hero .inside-page-hero.grid-container{max-width:calc(1200px - 0px - 0px);}
+.inside-page-hero > *:last-child{margin-bottom:0px;}.header-wrap{position:absolute;left:0px;right:0px;z-index:10;}
+.header-wrap .site-header{background:rgba(0,0,0,0);}.header-wrap .toggled .main-title a, 
+.header-wrap .toggled .main-title a:hover, .header-wrap .toggled .main-title a:visited, 
+.header-wrap .navigation-stick .main-title a, .header-wrap .navigation-stick 
+.main-title a:hover, .header-wrap .navigation-stick .main-title a:visited{color:#ffffff;}
+.header-wrap #site-navigation:not(.toggled), .header-wrap #mobile-header:not(.toggled):not(.navigation-stick), 
+.has-inline-mobile-toggle .mobile-menu-control-wrapper{background:transparent;}
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li > a, 
+.header-wrap #mobile-header:not(.toggled):not(.navigation-stick) .main-nav > ul > li > a, 
+.header-wrap .main-navigation:not(.toggled):not(.navigation-stick) 
+.menu-toggle, .header-wrap .main-navigation:not(.toggled):not(.navigation-stick) 
+.menu-toggle:hover, .main-navigation:not(.toggled):not(.navigation-stick) 
+.menu-bar-item:not(.close-search) > a{color:#ffffff;}
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li:hover > a, 
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li:focus > a, 
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li.sfHover > a, 
+.header-wrap #mobile-header:not(.toggled) .main-nav > ul > li:hover > a, 
+.header-wrap #site-navigation:not(.toggled) .menu-bar-item:not(.close-search):hover > a, 
+.header-wrap #mobile-header:not(.toggled) .menu-bar-item:not(.close-search):hover > a, 
+.header-wrap #site-navigation:not(.toggled) .menu-bar-item:not(.close-search).sfHover > a, 
+.header-wrap #mobile-header:not(.toggled) .menu-bar-item:not(.close-search).sfHover > a{background:transparent;color:#ffffff;}
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li[class*="current-menu-"] > a, 
+.header-wrap #mobile-header:not(.toggled) .main-nav > ul > li[class*="current-menu-"] > a, 
+.header-wrap #site-navigation:not(.toggled) .main-nav > ul > li[class*="current-menu-"]:hover > a, 
+.header-wrap #mobile-header:not(.toggled) .main-nav > ul > li[class*="current-menu-"]:hover > a{background:transparent;color:#ffffff;}
+.elementor-editor-active .header-wrap{pointer-events:none;}
+.post-image:not(:first-child), .page-content:not(:first-child), .entry-content:not(:first-child), 
+.entry-summary:not(:first-child), footer.entry-meta{margin-top:2.1em;}.post-image-above-header .inside-article div.featured-image, 
+.post-image-above-header .inside-article div.post-image{margin-bottom:2.1em;}@media (max-width: 1024px),(min-width:1025px){
+	.main-navigation.sticky-navigation-transition .main-nav > ul > li > a,
+	.sticky-navigation-transition .menu-toggle,.main-navigation.sticky-navigation-transition .menu-bar-item > a, 
+	.sticky-navigation-transition .navigation-branding .main-title{line-height:74px;}
+	.main-navigation.sticky-navigation-transition .site-logo img, 
+	.main-navigation.sticky-navigation-transition .navigation-search input[type="search"], 
+	.main-navigation.sticky-navigation-transition .navigation-branding img{height:74px;}}
+</style>
+<link data-minify="1" rel="stylesheet" id="generate-child-css" href="contato_archivos/style.css" media="all">
+<link data-minify="1" rel="stylesheet" id="wpdreams-asl-basic-css" href="contato_archivos/style.basic.css" media="all">
+<link data-minify="1" rel="stylesheet" id="wpdreams-ajaxsearchlite-css" href="contato_archivos/style-curvy-blue.css" media="all">
+<link data-minify="1" rel="stylesheet" id="elementor-icons-css" href="contato_archivos/elementor-icons.min.css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="contato_archivos/frontend-lite.min_002.css" media="all">
+<link rel="stylesheet" id="elementor-post-5-css" href="contato_archivos/post-5.css" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="contato_archivos/frontend-lite.min.css" media="all">
+<link rel="stylesheet" id="elementor-post-48136-css" href="contato_archivos/post-48136.css" media="all">
+<link rel="stylesheet" id="generate-navigation-branding-css" href="contato_archivos/navigation-branding-flex.min.css" media="all">
+<style id="generate-navigation-branding-inline-css">
+.main-navigation.has-branding .inside-navigation.grid-container, .main-navigation.has-branding.grid-container .inside-navigation:not(.grid-container){padding:0px 40px 0px 40px;}.main-navigation.has-branding:not(.grid-container) .inside-navigation:not(.grid-container) .navigation-branding{margin-left:10px;}.main-navigation .sticky-navigation-logo, .main-navigation.navigation-stick .site-logo:not(.mobile-header-logo){display:none;}.main-navigation.navigation-stick .sticky-navigation-logo{display:block;}.navigation-branding img, .site-logo.mobile-header-logo img{height:90px;width:auto;}.navigation-branding .main-title{line-height:90px;}@media (max-width: 768px){.main-navigation.has-branding.nav-align-center .menu-bar-items, .main-navigation.has-sticky-branding.navigation-stick.nav-align-center .menu-bar-items{margin-left:auto;}.navigation-branding{margin-right:auto;margin-left:10px;}.navigation-branding .main-title, .mobile-header-navigation .site-logo{margin-left:10px;}.main-navigation.has-branding .inside-navigation.grid-container{padding:0px;}}
+</style>
+<link data-minify="1" rel="stylesheet" id="moove_gdpr_frontend-css" href="contato_archivos/gdpr-main.css" media="all">
+<style id="moove_gdpr_frontend-inline-css">
+#moove_gdpr_cookie_modal,#moove_gdpr_cookie_info_bar,.gdpr_cookie_settings_shortcode_content{font-family:Nunito,sans-serif}#moove_gdpr_save_popup_settings_button{background-color:#373737;color:#fff}#moove_gdpr_save_popup_settings_button:hover{background-color:#000}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton{background-color:#e7ab08}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green{background-color:#e7ab08;border-color:#e7ab08}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton:hover,.gdpr_cookie_settings_shortcode_content .gdpr-shr-button.button-green:hover{background-color:#fff;color:#e7ab08}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon{background-color:#e7ab08;border:1px solid #e7ab08}#moove_gdpr_cookie_info_bar span.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar span.change-settings-button:focus{-webkit-box-shadow:0 0 1px 3px #e7ab08;-moz-box-shadow:0 0 1px 3px #e7ab08;box-shadow:0 0 1px 3px #e7ab08}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close i:hover,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close span.gdpr-icon:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button{color:#e7ab08}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li.menu-item-selected button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a span.gdpr-icon,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button span.gdpr-icon{color:inherit}#moove_gdpr_cookie_modal .gdpr-acc-link{line-height:0;font-size:0;color:transparent;position:absolute}#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-close:hover i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li button i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-left-content #moove-gdpr-menu li a i,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-tab-main .moove-gdpr-tab-main-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button:hover,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:hover,#moove_gdpr_cookie_info_bar span[data-href]>u.change-settings-button,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content span.change-settings-button.focus-g,span.change-settings-button:focus,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button.focus-g,#moove_gdpr_cookie_info_bar.moove-gdpr-dark-scheme .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content u.change-settings-button:focus{color:#e7ab08}#moove_gdpr_cookie_modal.gdpr_lightbox-hide{display:none}#moove_gdpr_cookie_info_bar.gdpr-full-screen-infobar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content .moove-gdpr-cookie-notice p a{color:#e7ab08!important}#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content a.mgbutton,#moove_gdpr_cookie_info_bar .moove-gdpr-info-bar-container .moove-gdpr-info-bar-content button.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder a.mgbutton,#moove_gdpr_cookie_modal .moove-gdpr-modal-content .moove-gdpr-modal-footer-content .moove-gdpr-button-holder button.mgbutton,.gdpr-shr-button,#moove_gdpr_cookie_info_bar .moove-gdpr-infobar-close-btn{border-radius:0}
+</style>
+<link data-minify="1" rel="stylesheet" id="gdpr_cc_addon_frontend-css" href="contato_archivos/gdpr_cc_addon.css" media="all">
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://keepcoding.io/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+</style>
+<script src="contato_archivos/jquery.min.js" id="jquery-core-js" defer="defer"></script>
+<script src="contato_archivos/jquery-migrate.min.js" id="jquery-migrate-js" defer="defer"></script>
+<link rel="https://api.w.org/" href="https://keepcoding.io/wp-json/"><link rel="alternate" type="application/json" href="https://keepcoding.io/wp-json/wp/v2/pages/48136">
+<style id="generateblocks-css">.gb-container .wp-block-image img{vertical-align:middle;}.gb-container .gb-shape{position:absolute;overflow:hidden;pointer-events:none;line-height:0;}.gb-container .gb-shape svg{fill:currentColor;}.gb-container-982ec9e8{background-color:var(--contrast);color:#ffffff;}.gb-container-982ec9e8 > .gb-inside-container{padding:0;max-width:1100px;margin-left:auto;margin-right:auto;}.gb-container-982ec9e8 a, .gb-container-982ec9e8 a:visited{color:#ffffff;}.gb-container-982ec9e8 a:hover{color:#ffffff;}.gb-grid-wrapper > .gb-grid-column-fc6b6419{width:75%;}.gb-grid-wrapper > .gb-grid-column-4f75441a{width:25%;}.gb-grid-wrapper{display:flex;flex-wrap:wrap;}.gb-grid-wrapper > .gb-grid-column > .gb-container{display:flex;flex-direction:column;height:100%;}.gb-grid-column{box-sizing:border-box;}.gb-grid-wrapper .wp-block-image{margin-bottom:0;}.gb-grid-wrapper-6ac0baf5 > .gb-grid-column{padding-left:0px;padding-bottom:0px;}.gb-button-wrapper{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;clear:both;}.gb-button-wrapper-53bef180{justify-content:flex-end;}.gb-icon{display:inline-flex;line-height:0;}.gb-icon svg{height:1em;width:1em;fill:currentColor;}.gb-button-wrapper .gb-button{display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;transition:.2s background-color ease-in-out, .2s color ease-in-out, .2s border-color ease-in-out, .2s opacity ease-in-out, .2s box-shadow ease-in-out;}.gb-button-wrapper .gb-button .gb-icon{align-items:center;}.gb-button-wrapper a.gb-button-acc49afa,.gb-button-wrapper a.gb-button-acc49afa:visited{background-color:#f39c12;color:#ffffff;font-size:0.8em;padding:7px 15px;border-radius:0;display:inline-flex;align-items:center;}.gb-button-wrapper a.gb-button-acc49afa:hover,.gb-button-wrapper a.gb-button-acc49afa:active,.gb-button-wrapper a.gb-button-acc49afa:focus{background-color:#d35400;color:#ffffff;}a.gb-button-acc49afa .gb-icon{font-size:1em;padding-right:0.5em;}@media (max-width: 767px) {.gb-grid-wrapper > .gb-grid-column-fc6b6419{width:100%;}.gb-grid-wrapper > .gb-grid-column-4f75441a{width:100%;}.gb-grid-wrapper-6ac0baf5{justify-content:center;}.gb-button-wrapper-53bef180{justify-content:center;}}</style> <style>
+                    
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+						font-size: 0px !important;
+						color: rgba(0, 0, 0, 0);
+					}
+					div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+						font-size: 11px !important;
+						position: absolute;
+						top: 0;
+						left: 0;
+						z-index: 1;
+					}
+					.asl_w_container {
+						width: 100%;
+						margin: 0 0px 0 0px;
+					}
+					div[id*='ajaxsearchlite'].asl_m {
+						width: 100%;
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+						font-weight: bold;
+						color: rgba(217, 49, 43, 1);
+						background-color: rgba(238, 238, 238, 1);
+					}
+					div[id*='ajaxsearchliteres'].wpdreams_asl_results .results div.asl_image {
+						width: 70px;
+						height: 70px;
+						background-size: cover;
+						background-repeat: no-repeat;
+					}
+					div.asl_r .results {
+						max-height: none;
+					}
+				
+						div.asl_r.asl_w.vertical .results .item::after {
+							display: block;
+							position: absolute;
+							bottom: 0;
+							content: '';
+							height: 1px;
+							width: 100%;
+							background: #D8D8D8;
+						}
+						div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+							display: none;
+						}
+					                </style>
+<link rel="icon" href="https://keepcoding.io/wp-content/uploads/2022/01/cropped-Favicon-KC-32x32.png" sizes="32x32">
+<link rel="icon" href="https://keepcoding.io/wp-content/uploads/2022/01/cropped-Favicon-KC-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://keepcoding.io/wp-content/uploads/2022/01/cropped-Favicon-KC-180x180.png">
+<meta name="msapplication-TileImage" content="https://keepcoding.io/wp-content/uploads/2022/01/cropped-Favicon-KC-270x270.png">
+<style id="wp-custom-css">
+			.wp-block-columns {
+	margin-bottom: 0px;
+}
+
+/* encabezado principal blog */
+.page-hero h1 {
+	font-size: 4rem;
+	line-height: 1em;
+	font-weight: 800;
+	margin-right: 10%;
+	color: orange
+}
+
+.hero-meta {
+	font-size: 1.1rem;
+}
+
+.blog-tags {
+	margin-top: 1.3rem;
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.bread-crumbs {
+	font-size: 1rem;
+	margin-top: 3rem;
+}
+
+.bread-crumbs a {
+	color: orange;
+}
+
+/* encabezado principal blog para smartphones */
+@media (max-width: 800px) {
+  .page-hero h1 {
+    font-size: 2.5rem;
+		margin-right: 20%;
+		margin-top: 40px;
+  }
+}
+
+/* estilo blog */
+.inside-article {
+	color: #353535;
+}
+
+.inside-article h2, h3  {
+	margin-top: 1rem;
+}
+
+.inside-article p {
+	margin-bottom: 1rem;
+}
+
+.page-hero a {
+	text-decoration: none;
+}
+
+.wp-block-search .wp-block-search__input {
+	margin-top: 10px;
+	border-radius: 10px;
+	border: 0px;
+	border-bottom: 3px solid orange;
+	background-color: #ededed;
+	
+}
+
+.wp-block-search .wp-block-search__button {
+	margin-top: 10px;
+	border: 0px;
+	border-radius: 10px;
+}
+
+@media (min-width: 769px) {
+    .right-sidebar .site-content {
+        display: flex;
+    }
+
+    .inside-right-sidebar {
+        height: 100%;
+    }
+
+    #sidebar-hook {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 110px;
+        z-index: 0;
+    }
+}
+
+.bloque-blog {
+	background-color: #fff2dc;
+	padding: 1.5rem;
+	border-left: solid 5px orange
+}
+
+#titulo-bloque {
+	font-size: 1.7rem;
+	font-weight: 800;
+}
+
+#texto-bloque {
+	line-height: 1.2em;
+}
+
+#link-bloque {
+	font-weight: 800;
+}
+
+/* estilo test blog */
+
+.bloque-blog-test {
+	padding: 0.8rem;
+	border: 4px solid #eaeaea;
+	border-radius: 30px;
+	margin: 30px 0px;
+}
+
+#titulo-bloque-test {
+		font-size: 1.9rem;
+	font-weight: 800;
+	color: orange;
+}
+
+#link-bloque-test {
+	font-weight: 800;
+	text-decoration: none;
+}
+
+/* estilo footer */
+
+.footer-widgets a {
+	text-decoration: none;
+	line-height: 1.6rem;
+}
+
+p.has-text-color a {
+	text-decoration: none;
+}
+
+.has-base-3-color a {
+	color: white;
+}
+
+/* Reviews pagina opiniones*/
+
+.reviews-landing {
+	font-size: 1rem;
+}
+
+.testimonial-name {
+	color: orange;
+	font-weight: 800;
+	font-size: 1.1rem;
+}
+
+.wpmtst-filter-container-top {
+	color: orange; 
+	border: 1rem;
+}
+
+.wpmtst-button-group .label, .wpmtst-filters-dropdown .label {
+	font-size: 1rem !important;
+	font-weight: 700;
+	margin: 0.6rem;
+}
+.wpmtst-filters-dropdown select {
+	border-color: orange !important;
+	border-radius: 5px;
+}
+
+.testimonial-company {
+	font-weight: 700;
+	font-size: 0.9rem;
+	line-height: 0.9rem;
+}
+
+/* boton ver mas bootcamp menu */
+
+.vertodosmenu {
+	font-weight: 700;
+	color: orange;
+}		</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy-youtube{position:relative;width:100%;max-width:100%;height:0;padding-bottom:56.23%;overflow:hidden}.perfmatters-lazy-youtube img{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:100%;max-width:100%;height:auto;margin:auto;border:none;cursor:pointer;transition:.5s all;-webkit-transition:.5s all;-moz-transition:.5s all}.perfmatters-lazy-youtube img:hover{-webkit-filter:brightness(75%)}.perfmatters-lazy-youtube .play{position:absolute;top:50%;left:50%;right:auto;width:68px;height:48px;margin-left:-34px;margin-top:-24px;background:url(https://keepcoding.io/wp-content/plugins/perfmatters/img/youtube.svg) no-repeat;background-position:center;background-size:cover;pointer-events:none}.perfmatters-lazy-youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:99}.wp-has-aspect-ratio .wp-block-embed__wrapper{position:relative;}.wp-has-aspect-ratio .perfmatters-lazy-youtube{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;padding-bottom:0}</style><link href="https://js.hsforms.net/" rel="preconnect"><link href="contato_archivos/v2.js" rel="preload" as="script"><link href="contato_archivos/wp-polyfill.min.js" rel="preload" as="script"><link href="contato_archivos/hooks.min.js" rel="preload" as="script"><link href="contato_archivos/i18n.min.js" rel="preload" as="script"><link href="contato_archivos/jquery.min.js" rel="preload" as="script"><link href="contato_archivos/jquery-migrate.min.js" rel="preload" as="script"><link href="contato_archivos/sticky.min.js" rel="preload" as="script"><link href="contato_archivos/smooth-scroll.min.js" rel="preload" as="script"><link href="contato_archivos/menu.min.js" rel="preload" as="script"><link href="contato_archivos/navigation-search.min.js" rel="preload" as="script"><link href="contato_archivos/asl-prereq.js" rel="preload" as="script"><link href="contato_archivos/asl-core.js" rel="preload" as="script"><link href="contato_archivos/asl-results-vertical.js" rel="preload" as="script"><link href="contato_archivos/asl-autocomplete.js" rel="preload" as="script"><link href="contato_archivos/asl-load.js" rel="preload" as="script"><link href="contato_archivos/asl-wrapper.js" rel="preload" as="script"><link href="contato_archivos/main.js" rel="preload" as="script"><link href="contato_archivos/gdpr_cc_addon.js" rel="preload" as="script"><link href="contato_archivos/heartbeat.js" rel="preload" as="script"><link href="contato_archivos/instantpage.js" rel="preload" as="script"><link href="contato_archivos/webpack-pro.runtime.min.js" rel="preload" as="script"><link href="contato_archivos/webpack.runtime.min.js" rel="preload" as="script"><link href="contato_archivos/frontend-modules.min.js" rel="preload" as="script"><link href="contato_archivos/regenerator-runtime.min.js" rel="preload" as="script"><link href="contato_archivos/frontend.min.js" rel="preload" as="script"><link href="contato_archivos/waypoints.min.js" rel="preload" as="script"><link href="contato_archivos/core.min.js" rel="preload" as="script"><link href="contato_archivos/frontend.min_002.js" rel="preload" as="script"><link href="contato_archivos/elements-handlers.min.js" rel="preload" as="script"><!-- Google Tag Manager -->
+<script data-gdpr="">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TW6S4X');</script>
+<!-- End Google Tag Manager --></head>
+<body class="page-template page-template-elementor_header_footer page page-id-48136 wp-custom-logo wp-embed-responsive post-image-aligned-center sticky-menu-no-transition sticky-enabled both-sticky-menu no-sidebar nav-below-header separate-containers nav-search-enabled header-aligned-left dropdown-hover elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-48136 full-width-content e--ua-firefox" itemtype="https://schema.org/WebPage" itemscope="" data-elementor-device-mode="desktop"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TW6S4X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627"></feFuncR><feFuncG type="table" tableValues="0 0.49803921568627"></feFuncG><feFuncB type="table" tableValues="0 0.49803921568627"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1"></feFuncR><feFuncG type="table" tableValues="0 0.27843137254902"></feFuncG><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0"></feFuncR><feFuncG type="table" tableValues="0 0.64705882352941"></feFuncG><feFuncB type="table" tableValues="0 1"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.94901960784314"></feFuncG><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745"></feFuncR><feFuncG type="table" tableValues="0 1"></feFuncG><feFuncB type="table" tableValues="0.44705882352941 0.4"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></feColorMatrix><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1"></feFuncR><feFuncG type="table" tableValues="0 0.66274509803922"></feFuncG><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725"></feFuncB><feFuncA type="table" tableValues="1 1"></feFuncA></feComponentTransfer><feComposite in2="SourceGraphic" operator="in"></feComposite></filter></defs></svg><div class="header-wrap"><a class="screen-reader-text skip-link" href="#content" title="Saltar al contenido">Saltar al contenido</a><div class="gb-container gb-container-982ec9e8"><div class="gb-inside-container">
+<div class="gb-grid-wrapper gb-grid-wrapper-6ac0baf5">
+<div class="gb-grid-column gb-grid-column-fc6b6419"><div class="gb-container gb-container-fc6b6419"><div class="gb-inside-container"></div></div></div>
+<div class="gb-grid-column gb-grid-column-4f75441a"><div class="gb-container gb-container-4f75441a"><div class="gb-inside-container">
+<div class="gb-button-wrapper gb-button-wrapper-53bef180">
+<a class="gb-button gb-button-acc49afa" href="https://sso.teachable.com/secure/897/identity/login/password?wizard_id=s5FW2nk3vZJx9QeZ5EaYy6LjTi7Q3ji-IyZ5BmG0aWeDDiBLVc0gm2WYuJPE1iaNd15VUyEDy6jPA2k8iDfGGg" target="_blank" rel="nofollow noopener noreferrer"><span class="gb-icon"><svg aria-hidden="true" role="img" height="1em" width="1em" viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg></span><span class="gb-button-text">Acceso Alumnos</span></a>
+</div>
+</div></div></div>
+</div>
+</div></div> <nav class="has-branding has-sticky-branding main-navigation nav-align-right has-menu-bar-items sub-menu-right stuckElement is_stuck navigation-stick navigation-clone sticky-navigation-transition" id="sticky-navigation" aria-label="Principal" itemtype="https://schema.org/SiteNavigationElement" itemscope="" style="z-index: 10000; margin-top: 0px; position: fixed; top: 0px;">
+<div class="inside-navigation grid-container">
+<div class="navigation-branding"><div class="site-logo">
+<a href="https://keepcoding.io/" title="KeepCoding Tech School" rel="home">
+<img class="header-image is-logo-image" alt="KeepCoding Tech School" src="contato_archivos/cropped-logo-keepcoding-Tech-School.webp" title="KeepCoding Tech School" srcset="contato_archivos/cropped-logo-keepcoding-Tech-School.webp 1x, contato_archivos/logo-keepcoding-Tech-School@2x.webp 2x" width="350" height="70">
+</a>
+</div><div class="sticky-navigation-logo">
+<a href="https://keepcoding.io/" title="KeepCoding Tech School" rel="home">
+<img src="contato_archivos/Logo-KeepCoding-tech-school-final.webp" class="is-logo-image perfmatters-lazy entered lazyloaded" alt="KeepCoding Tech School" data-lazy-src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%20253%2060'%3E%3C/svg%3E" data-ll-status="loaded" width="253" height="60"><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20253%2060'%3E%3C/svg%3E" class="is-logo-image" alt="KeepCoding Tech School" width="253" height="60" data-lazy-src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" /></noscript><noscript><img src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" class="is-logo-image" alt="KeepCoding Tech School" width="253" height="60" /></noscript>
+</a>
+</div></div><form method="get" class="search-form navigation-search" action="https://keepcoding.io/">
+<input type="search" class="search-field" name="s" title="Buscar">
+</form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path></svg></span><span class="mobile-menu">Menú</span> </button>
+<div id="primary-menu" class="main-nav"><ul id="menu-menu-principal" class=" menu sf-menu"><li id="menu-item-256" class="mega-menu mega-menu-col-3 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-256"><a href="https://keepcoding.io/sobre-nosotros/">Nosotros<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64522"><a href="https://keepcoding.io/sobre-nosotros/">¿Quiénes Somos?<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="https://keepcoding.io/sobre-nosotros/nuestro-equipo-keepcoding/">Nuestro Equipo</a></li>
+<li id="menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258"><a href="https://keepcoding.io/sobre-nosotros/profesores/">Nuestros Profesores</a></li>
+<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="https://keepcoding.io/sobre-nosotros/nuestros-clientes/">Nuestros Clientes</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="https://keepcoding.io/sobre-nosotros/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
+</ul>
+</li>
+<li id="menu-item-64523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64523"><a href="#">Nuestros Serivicios<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64524"><a href="https://keepcoding.io/nuestros-bootcamps/">Bootcamps</a></li>
+<li id="menu-item-48148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48148"><a href="https://keepcoding.io/nuestros-bootcamps/formacion-a-empresas/">Formación a Empresas</a></li>
+<li id="menu-item-64525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64525"><a href="https://plataforma.keepcoding.io/">Plataforma Cursos Online</a></li>
+<li id="menu-item-58577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58577"><a href="https://keepcoding.io/nuestros-alumnos/headhunting-keepcoding/">HeadHunting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-395" class="mega-menu mega-menu-col-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-395"><a href="https://keepcoding.io/nuestros-alumnos/">Alumnos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64528"><a href="#">Nuestros Alumnos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47742"><a href="https://keepcoding.io/nuestros-alumnos/opiniones-keepcoding/">Opiniones KeepCoding</a></li>
+<li id="menu-item-47745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47745"><a href="https://keepcoding.io/nuestros-alumnos/casos-de-exito/">Casos de Éxito</a></li>
+<li id="menu-item-424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a href="https://keepcoding.io/nuestros-alumnos/proyectos-finales/">Proyectos Finales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-47814" class="mega-menu mega-menu-col-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-47814"><a href="https://keepcoding.io/nuestros-bootcamps/">Bootcamps<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64533"><a href="#">Nuestros Bootcamps<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47815"><a href="https://keepcoding.io/nuestros-bootcamps/bootcamp-aprende-a-programar/">Aprende a Programar desde Cero – Full Stack Jr.</a></li>
+<li id="menu-item-48064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48064"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-mobile-bootcamp/">Desarrollo de Apps Móviles Full Stack Bootcamp</a></li>
+<li id="menu-item-47936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47936"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-big-data-machine-learning-bootcamp/">Big Data, Inteligencia Artificial &amp; Machine Learning Full Stack Bootcamp</a></li>
+<li id="menu-item-47991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47991"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-web-bootcamp/">Desarrollo Web Full Stack Bootcamp</a></li>
+</ul>
+</li>
+<li id="menu-item-92635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-92635"><a href="#"><span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47990"><a href="https://keepcoding.io/nuestros-bootcamps/bootcamp-en-ciberseguridad/">Ciberseguridad Full Stack Bootcamp</a></li>
+<li id="menu-item-47989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47989"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-devops-bootcamp/">DevOps &amp; Cloud Computing Full Stack Bootcamp</a></li>
+<li id="menu-item-48063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48063"><a href="https://keepcoding.io/nuestros-bootcamps/marketing-digital-y-analisis-de-datos/">Marketing Digital y Análisis de Datos Bootcamp</a></li>
+<li id="menu-item-92634" class="vertodosmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-92634"><a href="https://keepcoding.io/nuestros-bootcamps/">Ver todos &gt;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-68320" class="mega-menu mega-menu-col-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68320"><a href="#">Career Services<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-68332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68332"><a href="#">Acompañamiento personalizado para potenciar tu carrera<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47773"><a href="https://keepcoding.io/nuestros-alumnos/bolsa-de-talento/">Bolsa de Talento para Alumnos</a></li>
+<li id="menu-item-64530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64530"><a href="https://keepcoding.io/nuestros-alumnos/bolsa-de-talento-para-empresas/">Bolsa de Talento para Empresas</a></li>
+<li id="menu-item-68321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68321"><a href="https://keepcoding.io/nuestros-alumnos/mentores/">Mentores Keepcoding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-68322" class="mega-menu mega-menu-col-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68322"><a href="#">Recursos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-68333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68333"><a href="#">Contenido gratuito para tu formación<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-48146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48146"><a href="https://keepcoding.io/blog/">Techpedia: El mas completo blog tech para profesionales</a></li>
+<li id="menu-item-68324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68324"><a href="https://plataforma.keepcoding.io/courses/category/cursos-gratuitos">Cursos Online Gratis</a></li>
+<li id="menu-item-68323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68323"><a href="https://keepcoding.io/sobre-nosotros/nuestros-eventos/">Nuestros Eventos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-48145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-48136 current_page_item menu-item-48145"><a href="https://keepcoding.io/contacto/" aria-current="page">Contáctanos</a></li>
+</ul></div><div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Abrir la barra de búsqueda" href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"></path></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path></svg></span></a></span></div> </div>
+</nav><nav class="has-branding has-sticky-branding main-navigation nav-align-right has-menu-bar-items sub-menu-right is_stuck navigation-stick navigation-clone sticky-navigation-transition" id="sticky-placeholder" aria-label="Principal" style="visibility: hidden;" aria-hidden="true">
+<div class="inside-navigation grid-container">
+<div class="navigation-branding"><div class="site-logo">
+<a href="https://keepcoding.io/" title="KeepCoding Tech School" rel="home">
+<img class="header-image is-logo-image" alt="KeepCoding Tech School" src="contato_archivos/cropped-logo-keepcoding-Tech-School.webp" title="KeepCoding Tech School" srcset="contato_archivos/cropped-logo-keepcoding-Tech-School.webp 1x, contato_archivos/logo-keepcoding-Tech-School@2x.webp 2x" width="350" height="70">
+</a>
+</div><div class="sticky-navigation-logo">
+<a href="https://keepcoding.io/" title="KeepCoding Tech School" rel="home">
+<img src="contato_archivos/Logo-KeepCoding-tech-school-final.webp" class="is-logo-image perfmatters-lazy entered lazyloaded" alt="KeepCoding Tech School" data-lazy-src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%20253%2060'%3E%3C/svg%3E" data-ll-status="loaded" width="253" height="60"><noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20253%2060'%3E%3C/svg%3E" class="is-logo-image" alt="KeepCoding Tech School" width="253" height="60" data-lazy-src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" /></noscript><noscript><img src="https://keepcoding.io/wp-content/uploads/2021/12/Logo-KeepCoding-tech-school-final.png" class="is-logo-image" alt="KeepCoding Tech School" width="253" height="60" /></noscript>
+</a>
+</div></div><form method="get" class="search-form navigation-search" action="https://keepcoding.io/">
+<input type="search" class="search-field" name="s" title="Buscar">
+</form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path></svg></span><span class="mobile-menu">Menú</span> </button>
+<div id="primary-menu" class="main-nav"><ul id="menu-menu-principal" class=" menu sf-menu"><li id="menu-item-256" class="mega-menu mega-menu-col-3 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-256"><a href="https://keepcoding.io/sobre-nosotros/">Nosotros<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-64522"><a href="https://keepcoding.io/sobre-nosotros/">¿Quiénes Somos?<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-259"><a href="https://keepcoding.io/sobre-nosotros/nuestro-equipo-keepcoding/">Nuestro Equipo</a></li>
+<li id="menu-item-258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-258"><a href="https://keepcoding.io/sobre-nosotros/profesores/">Nuestros Profesores</a></li>
+<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="https://keepcoding.io/sobre-nosotros/nuestros-clientes/">Nuestros Clientes</a></li>
+<li id="menu-item-393" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a href="https://keepcoding.io/sobre-nosotros/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
+</ul>
+</li>
+<li id="menu-item-64523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64523"><a href="#">Nuestros Serivicios<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64524"><a href="https://keepcoding.io/nuestros-bootcamps/">Bootcamps</a></li>
+<li id="menu-item-48148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48148"><a href="https://keepcoding.io/nuestros-bootcamps/formacion-a-empresas/">Formación a Empresas</a></li>
+<li id="menu-item-64525" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64525"><a href="https://plataforma.keepcoding.io/">Plataforma Cursos Online</a></li>
+<li id="menu-item-58577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58577"><a href="https://keepcoding.io/nuestros-alumnos/headhunting-keepcoding/">HeadHunting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-395" class="mega-menu mega-menu-col-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-395"><a href="https://keepcoding.io/nuestros-alumnos/">Alumnos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64528" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64528"><a href="#">Nuestros Alumnos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47742"><a href="https://keepcoding.io/nuestros-alumnos/opiniones-keepcoding/">Opiniones KeepCoding</a></li>
+<li id="menu-item-47745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47745"><a href="https://keepcoding.io/nuestros-alumnos/casos-de-exito/">Casos de Éxito</a></li>
+<li id="menu-item-424" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-424"><a href="https://keepcoding.io/nuestros-alumnos/proyectos-finales/">Proyectos Finales</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-47814" class="mega-menu mega-menu-col-2 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-47814"><a href="https://keepcoding.io/nuestros-bootcamps/">Bootcamps<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-64533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64533"><a href="#">Nuestros Bootcamps<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47815"><a href="https://keepcoding.io/nuestros-bootcamps/bootcamp-aprende-a-programar/">Aprende a Programar desde Cero – Full Stack Jr.</a></li>
+<li id="menu-item-48064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48064"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-mobile-bootcamp/">Desarrollo de Apps Móviles Full Stack Bootcamp</a></li>
+<li id="menu-item-47936" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47936"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-big-data-machine-learning-bootcamp/">Big Data, Inteligencia Artificial &amp; Machine Learning Full Stack Bootcamp</a></li>
+<li id="menu-item-47991" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47991"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-web-bootcamp/">Desarrollo Web Full Stack Bootcamp</a></li>
+</ul>
+</li>
+<li id="menu-item-92635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-92635"><a href="#"><span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47990" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47990"><a href="https://keepcoding.io/nuestros-bootcamps/bootcamp-en-ciberseguridad/">Ciberseguridad Full Stack Bootcamp</a></li>
+<li id="menu-item-47989" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47989"><a href="https://keepcoding.io/nuestros-bootcamps/full-stack-devops-bootcamp/">DevOps &amp; Cloud Computing Full Stack Bootcamp</a></li>
+<li id="menu-item-48063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48063"><a href="https://keepcoding.io/nuestros-bootcamps/marketing-digital-y-analisis-de-datos/">Marketing Digital y Análisis de Datos Bootcamp</a></li>
+<li id="menu-item-92634" class="vertodosmenu menu-item menu-item-type-post_type menu-item-object-page menu-item-92634"><a href="https://keepcoding.io/nuestros-bootcamps/">Ver todos &gt;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-68320" class="mega-menu mega-menu-col-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68320"><a href="#">Career Services<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-68332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68332"><a href="#">Acompañamiento personalizado para potenciar tu carrera<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-47773" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-47773"><a href="https://keepcoding.io/nuestros-alumnos/bolsa-de-talento/">Bolsa de Talento para Alumnos</a></li>
+<li id="menu-item-64530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64530"><a href="https://keepcoding.io/nuestros-alumnos/bolsa-de-talento-para-empresas/">Bolsa de Talento para Empresas</a></li>
+<li id="menu-item-68321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68321"><a href="https://keepcoding.io/nuestros-alumnos/mentores/">Mentores Keepcoding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-68322" class="mega-menu mega-menu-col-2 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68322"><a href="#">Recursos<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-68333" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-68333"><a href="#">Contenido gratuito para tu formación<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow-right"><svg viewBox="0 0 192 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M178.425 256.001c0 2.266-1.133 4.815-2.832 6.515L43.599 394.509c-1.7 1.7-4.248 2.833-6.514 2.833s-4.816-1.133-6.515-2.833l-14.163-14.162c-1.699-1.7-2.832-3.966-2.832-6.515 0-2.266 1.133-4.815 2.832-6.515l111.317-111.316L16.407 144.685c-1.699-1.7-2.832-4.249-2.832-6.515s1.133-4.815 2.832-6.515l14.163-14.162c1.7-1.7 4.249-2.833 6.515-2.833s4.815 1.133 6.514 2.833l131.994 131.993c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero"></path></svg></span></span></a>
+<ul class="sub-menu">
+<li id="menu-item-48146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48146"><a href="https://keepcoding.io/blog/">Techpedia: El mas completo blog tech para profesionales</a></li>
+<li id="menu-item-68324" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-68324"><a href="https://plataforma.keepcoding.io/courses/category/cursos-gratuitos">Cursos Online Gratis</a></li>
+<li id="menu-item-68323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68323"><a href="https://keepcoding.io/sobre-nosotros/nuestros-eventos/">Nuestros Eventos</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-48145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-48136 current_page_item menu-item-48145"><a href="https://keepcoding.io/contacto/" aria-current="page">Contáctanos</a></li>
+</ul></div><div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Abrir la barra de búsqueda" href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z"></path></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z"></path></svg></span></a></span></div> </div>
+</nav>
+</div>
+<div class="site grid-container container hfeed" id="page">
+<div class="site-content" id="content">
+<div data-elementor-type="wp-page" data-elementor-id="48136" class="elementor elementor-48136">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-3a3b0cf elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="3a3b0cf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2cea7e0" data-id="2cea7e0" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-7f2af41 elementor-widget elementor-widget-heading" data-id="7f2af41" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.4 - 31-08-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Contato JS.CODER</h1> </div>
+</div>
+<div class="elementor-element elementor-element-608e6a0 elementor-widget elementor-widget-text-editor" data-id="608e6a0" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<style>/*! elementor - v3.7.4 - 31-08-2022 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#818a91;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#818a91;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style> <p>Estamos a tu disposición para ayudarte en lo que necesites ¡Escríbenos!</p> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-45204bc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="45204bc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30272c2" data-id="30272c2" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+	<section class="elementor-section elementor-inner-section elementor-element elementor-element-6c39630 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6c39630" data-element_type="section">
+	<div class="elementor-container elementor-column-gap-default">
+	<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ddc72ea" data-id="ddc72ea" data-element_type="column">
+	<div  style="border: 1px solid red" class="elementor-widget-wrap elementor-element-populated">
+	<div class="elementor-element elementor-element-17f1b5e elementor-widget elementor-widget-text-editor" data-id="17f1b5e" data-element_type="widget" data-widget_type="text-editor.default">
+	<div class="elementor-widget-container">
+	<p><span style="color: #000000; font-size: 2.4rem;">Josué Sousa da Silva</span></p><p>&nbsp;</p><p>Programador FullStack</p> </div>
+	</div>
+	</div>
+	</div>
+
+	<div style="border: 1px solid red" class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-44d1a3e" data-id="44d1a3e" data-element_type="column">
+		<div class="elementor-widget-wrap elementor-element-populated">
+			<div class="elementor-element elementor-element-7e5c778 elementor-widget elementor-widget-image" data-id="7e5c778" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+					<style>/*! elementor - v3.7.4 - 31-08-2022 */
+					.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}
+					</style> 
+					<img src="contato_archivos/kler-keepcoding.webp" class="attachment-large size-large perfmatters-lazy entered lazyloaded" alt="kler cabrera keepcoding" data-lazy-srcset="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png 230w, https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding-150x150.png 150w" data-lazy-sizes="(max-width: 230px) 100vw, 230px" title="Contacto KeepCoding 1" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%20230%20230'%3E%3C/svg%3E" data-ll-status="loaded" sizes="(max-width: 230px) 100vw, 230px" srcset="contato_archivos/kler-keepcoding.webp 230w, contato_archivos/kler-keepcoding-150x150.png 150w" width="230" height="230">
+					<noscript>
+						<img width="230" height="230" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20230%20230'%3E%3C/svg%3E" class="attachment-large size-large" alt="kler cabrera keepcoding" data-lazy-srcset="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png 230w, https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding-150x150.png 150w" data-lazy-sizes="(max-width: 230px) 100vw, 230px" title="Contacto KeepCoding 1" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png">
+					</noscript>
+					<noscript>
+						<img width="230" height="230" src="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png" class="attachment-large size-large" alt="kler cabrera keepcoding" srcset="https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding.png 230w, https://keepcoding.io/wp-content/uploads/2022/01/kler-keepcoding-150x150.png 150w" sizes="(max-width: 230px) 100vw, 230px" title="Contacto KeepCoding 1">
+					</noscript> 
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+	</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-054db12 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="054db12" data-element_type="section">
+<div style="border: 1px solid red" class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-de87ef5" data-id="de87ef5" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-39997db elementor-widget elementor-widget-text-editor" data-id="39997db" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>
+	<img class="wp-image-48139 alignleft perfmatters-lazy entered lazyloaded" src="contato_archivos/icono-movil-keepcoding.png" alt="Contacto KeepCoding 1" title="Contacto KeepCoding 2" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-movil-keepcoding.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" data-ll-status="loaded" width="62" height="62">
+	<noscript>
+	<img class=" wp-image-48139 alignleft" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" alt="Contacto KeepCoding 1" width="62" height="62" title="Contacto KeepCoding 2" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-movil-keepcoding.png"></noscript>
+	<noscript>
+		<img class=" wp-image-48139 alignleft" src="https://keepcoding.io/wp-content/uploads/2022/01/icono-movil-keepcoding.png" alt="Contacto KeepCoding 1" width="62" height="62" title="Contacto KeepCoding 2">
+	</noscript>
+	<br>
+	<span style="color: #ffffff;"><a style="color: #ffffff;" href="https://api.whatsapp.com/send?phone=+5585992853916&amp;text=Hola%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%E2%80%A6" target="_blank" rel="noopener">(+55) 85 992853916</a></span></p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-482cfed" data-id="482cfed" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-9e90cd2 elementor-widget elementor-widget-text-editor" data-id="9e90cd2" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p><img class="wp-image-48140 alignleft perfmatters-lazy entered lazyloaded" src="contato_archivos/icono-telefono-keepcoding-1.webp" alt="Contacto KeepCoding 2" title="Contacto KeepCoding 3" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-telefono-keepcoding-1.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" data-ll-status="loaded" width="62" height="62"><noscript><img class="wp-image-48140 alignleft" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" alt="Contacto KeepCoding 2" width="62" height="62" title="Contacto KeepCoding 3" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-telefono-keepcoding-1.png"></noscript><noscript><img class="wp-image-48140 alignleft" src="https://keepcoding.io/wp-content/uploads/2022/01/icono-telefono-keepcoding-1.png" alt="Contacto KeepCoding 2" width="62" height="62" title="Contacto KeepCoding 3"></noscript><br><span style="color: #ffffff;"><a style="color: #ffffff;" href="tel:+34916331779"> (+55) 85 992853916</a></span></p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-187bd7d" data-id="187bd7d" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-b271398 elementor-widget elementor-widget-text-editor" data-id="b271398" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p><img class="wp-image-48141 alignleft perfmatters-lazy entered lazyloaded" src="contato_archivos/icono-correo-keepcoding-1.webp" alt="Contacto KeepCoding 3" title="Contacto KeepCoding 4" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-correo-keepcoding-1.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" data-ll-status="loaded" width="62" height="62"><noscript><img class="wp-image-48141 alignleft" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2062%2062'%3E%3C/svg%3E" alt="Contacto KeepCoding 3" width="62" height="62" title="Contacto KeepCoding 4" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/icono-correo-keepcoding-1.png"></noscript><noscript><img class="wp-image-48141 alignleft" src="https://keepcoding.io/wp-content/uploads/2022/01/icono-correo-keepcoding-1.png" alt="Contacto KeepCoding 3" width="62" height="62" title="Contacto KeepCoding 4"></noscript><br><a href=""><span style="color: #ffffff;">worksoffices22@gmail.com</span></a></p> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-21b7f72 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="21b7f72" data-element_type="section">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fa46791" data-id="fa46791" data-element_type="column">
+<div style="border: 1px solid red" class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-ef37bd0 elementor-widget elementor-widget-text-editor" data-id="ef37bd0" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<p>Se preferir podes usar o fomulário e retonaremos assim que possivel.</p> </div>
+</div>
+</div>
+</div>
+<div style="border: 1px solid red"  class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9afae88" data-id="9afae88" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-3a7a539 elementor-widget elementor-widget-html" data-id="3a7a539" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<!-- [if lte IE 8]>
+<script type="rocketlazyloadscript" charset="utf-8" data-rocket-type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="contato_archivos/v2.js"></script>
+<script data-hubspot-rendered="true">
+  hbspt.forms.create({
+      portalId: "2924145",
+      formId: "1679c468-b0ec-4174-bd65-4d96ab681652"
+});
+</script><div  style="border: 1px solid red" class="hbspt-form" id="hbspt-form-1662597507701-166957156"><iframe title="Form 0" id="hs-form-iframe-0" class="hs-form-iframe" scrolling="no" style="width: 100%; position: static; border: medium none; display: block; overflow: hidden; height: 800px;" width="100%" height="800"></iframe></div> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-top-section elementor-element elementor-element-2bec8ac elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2bec8ac" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;tilt&quot;}">
+<div class="elementor-shape elementor-shape-top" data-negative="false">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z"></path>
+</svg> </div>
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-648c0ff" data-id="648c0ff" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a1d9fa9 elementor-widget elementor-widget-heading" data-id="a1d9fa9" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container" style="border: 0px solid red">
+<h2 class="elementor-heading-title elementor-size-default">Nuestras sedes</h2> </div>
+</div>
+<div class="elementor-element elementor-element-1c93616 elementor-widget elementor-widget-image" data-id="1c93616" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container" >
+	item aqui..
+</div>
+</div>
+<div class="elementor-element elementor-element-ee2a0d2 elementor-widget elementor-widget-text-editor" data-id="ee2a0d2" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<h3><strong><span style="color: #ff9900; font-size: 1.5rem;">KeepCoding Madrid</span></strong></h3><p>Calle Méndez Álvaro, 20<br>28045</p> </div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b7461ff" data-id="b7461ff" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-c7fe0aa elementor-widget elementor-widget-image" data-id="c7fe0aa" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+ item aqui..
+</div>
+</div>
+<div class="elementor-element elementor-element-7fcb88c elementor-widget elementor-widget-text-editor" data-id="7fcb88c" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<h3><strong><span style="color: #ff9900; font-size: 1.5rem;">KeepCoding Barcelona</span></strong></h3><p>Carrer Tànger, 86<br>08018</p> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<div class="wp-container-3 wp-block-columns are-vertically-aligned-center has-text-color has-background" style="background-color:#000000;color:#000000">
+<div class="wp-container-1 wp-block-column is-vertically-aligned-center">
+<div class="wp-block-image"><figure class="aligncenter size-full"><img alt="" class="wp-image-17 perfmatters-lazy entered lazyloaded" width="253" height="60"><noscript><img width="253" height="60" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20253%2060'%3E%3C/svg%3E" alt="" class="wp-image-17" /></noscript><noscript><img width="253" height="60" src="" alt="" class="wp-image-17"/></noscript></figure></div>
+</div>
+<div class="wp-container-2 wp-block-column is-vertically-aligned-center">
+<p class="has-text-align-center has-text-color" style="color:#e9b013"><strong>worksoffices22@gmail.com</strong></p>
+</div>
+</div>
+<p></p>
+
+<div class="site-footer footer-bar-active footer-bar-align-right">
+	<div id="footer-widgets" class="site footer-widgets">
+	<div class="footer-widgets-container grid-container">
+	<div class="inside-footer-widgets">
+	 <div class="footer-widget-1">
+	<aside id="block-7" class="widget inner-padding widget_block widget_text">
+	<p class="has-text-color" style="color:#f59e35;font-size:1.3rem"><strong>Bootcamps</strong></p>
+	</aside>
+	<aside id="block-8" class="widget inner-padding widget_block widget_text">
+	<p style="font-size:0.9rem">
+		algo aqui..
+	</p>
+	</aside> 
+	</div>
+
+	<div class="footer-widget-2">
+	<aside id="block-10" class="widget inner-padding widget_block">
+	<div style="height:28px" aria-hidden="true" class="wp-block-spacer"></div>
+	</aside>
+
+	<aside id="block-9" class="widget inner-padding widget_block widget_text">
+	<p style="font-size:0.9rem">
+		Algo aqui..
+	</p>
+	</aside> 
+	</div>
+
+<!-- footer -->
+	<div class="footer-widget-3">
+	<aside id="block-11" class="widget inner-padding widget_block widget_text">
+	<p class="has-text-color" style="color:#f59e35;font-size:1.3rem"><strong>Síguenos</strong></p>
+	</aside>
+	<aside id="block-12" class="widget inner-padding widget_block"><p>
+		<a href="https://www.youtube.com/c/KeepCoding" target="_blank" rel="nofollow noopener">
+			<img class="alignnone wp-image-44339  perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/ytkclogo.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" width="40" height="40"><noscript>
+			<img class="alignnone wp-image-44339 " src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" width="40" height="40" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/ytkclogo.png"></noscript>
+			<noscript>
+				<img class="alignnone wp-image-44339 " src="https://keepcoding.io/wp-content/uploads/2022/01/ytkclogo.png" alt="" width="40" height="40">
+			</noscript></a>
+		<a href="https://twitter.com/KeepCoding_" target="_blank" rel="nofollow noopener"><img class="alignnone wp-image-44340 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/twtkclogo.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" width="40" height="40"><noscript>
+			<img class="alignnone wp-image-44340 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" width="40" height="40" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/twtkclogo.png">
+			</noscript>
+			<noscript>
+			<img class="alignnone wp-image-44340 size-full" src="https://keepcoding.io/wp-content/uploads/2022/01/twtkclogo.png" alt="" width="40" height="40">
+			</noscript>
+		</a>
+
+		<a href="https://www.instagram.com/keepcoding_es/" target="_blank" rel="nofollow noopener">
+			<img class="alignnone wp-image-44341 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/instkclogo.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" width="40" height="40">
+		<noscript>
+			<img class="alignnone wp-image-44341 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" width="40" height="40" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/instkclogo.png"></noscript>
+			<noscript>
+				<img class="alignnone wp-image-44341 size-full" src="https://keepcoding.io/wp-content/uploads/2022/01/instkclogo.png" alt="" width="40" height="40">
+			</noscript>
+		</a>
+					<a href="https://www.facebook.com/keepcoding.training/" target="_blank" rel="nofollow noopener"><img class="alignnone wp-image-44342 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/fbkclogo.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" width="40" height="40"><noscript><img class="alignnone wp-image-44342 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" width="40" height="40" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/fbkclogo.png"></noscript><noscript><img class="alignnone wp-image-44342 size-full" src="https://keepcoding.io/wp-content/uploads/2022/01/fbkclogo.png" alt="" width="40" height="40"></noscript></a><a href="https://www.tiktok.com/@keepcoding?" target="_blank" rel="nofollow noopener"><img class="alignnone wp-image-44343 size-full perfmatters-lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/tiktokkc.png" data-src="//www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" width="40" height="40"><noscript><img class="alignnone wp-image-44343 size-full" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3C/svg%3E" alt="" width="40" height="40" data-lazy-src="https://keepcoding.io/wp-content/uploads/2022/01/tiktokkc.png"></noscript><noscript><img class="alignnone wp-image-44343 size-full" src="https://keepcoding.io/wp-content/uploads/2022/01/tiktokkc.png" alt="" width="40" height="40"></noscript> </a><br>
+	<br>
+	<img class=" wp-image-43875 alignleft perfmatters-lazy" src="" alt="" data-lazy-src=" " data-src=" " width="250" height="131">
+	<noscript>
+		<img class=" wp-image-43875 alignleft" src="" alt="" width="250" height="131"></noscript>
+</p>
+</aside> 
+</div>
+
+	</div>
+	</div>
+	</div>
+
+	<footer class="site-info" aria-label="Sitio" itemtype="https://schema.org/WPFooter" itemscope="">
+		<div class="inside-site-info grid-container">
+			<div class="footer-bar">
+				<aside id="block-13" class="widget inner-padding widget_block widget_text">
+					<p class="has-base-3-color has-text-color">
+						<meta charset="utf-8">
+						<a rel="noreferrer noopener nofollow" href="https://keepcoding.io/sobre-nosotros/codigo-de-honor-keepcoding/" target="_blank" data-type="page" data-id="48455">Código de honor</a> | <a rel="noreferrer noopener nofollow" href="https://keepcoding.io/politica-de-cookies/" target="_blank" data-type="page" data-id="48558">Política de cookies</a> | <a rel="noreferrer noopener nofollow" href="https://keepcoding.io/politica-de-privacidad/" target="_blank" data-type="page" data-id="48548">Política de Privacidad</a> | <a rel="noreferrer noopener nofollow" href="https://keepcoding.io/aviso-legal/" target="_blank" data-type="page" data-id="48563">Aviso legal</a> | <a rel="noreferrer noopener nofollow" href="https://keepcoding.io/sobre-nosotros/condiciones-de-contratacion-de-cursos/" target="_blank" data-type="page" data-id="48464">Condiciones de Contratación</a>
+					</p>
+				</aside> 
+			</div>
+			<div class="copyright-bar">
+				JS.CODER®. Todos os dereitos reservados 2022 </div>
+		</div>
+	</footer>
+</div>
+
+<aside id="moove_gdpr_cookie_info_bar" class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-light-scheme gdpr_infobar_postion_bottom gdpr-full-screen-infobar" role="note" aria-label="Banner de cookies RGPD" style="display: none;">
+<div class="moove-gdpr-info-bar-container">
+<div class="moove-gdpr-info-bar-content">
+<div class="moove-gdpr-cookie-notice">
+<p>Esse site foi desenvolvido com as tecnologias para front-end: HTML5, CSS3, Boosttrap5, JavaScript. Para back-end: MySql, JavaScript   
+Política de Cookies.</a> Hospedado no Heroku e com os códigos disponiveis no Github
+<span role="link" tabindex="1" data-href="#moove_gdpr_cookie_modal" class="change-settings-button"> <strong>Atenção!</strong></span></p>
+<p>Avalie bem esse site e não deixe de dar seu gostei ou não gostei, para que eu possar melhorar ainda mais meu trabalho e disponibilisar mais qualidade e eficiência em meus trabalhos. Agradeço seu feedeback.</p>
+</div>
+
+<div class="moove-gdpr-button-holder">
+<button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Aceptar" tabindex="1" role="button">Gostei</button>
+<button class="mgbutton moove-gdpr-infobar-settings-btn change-settings-button gdpr-fbo-2" data-href="#moove_gdpr_cookie_modal" tabindex="2" aria-label="Ajustes">Não gostei</button>
+</div>
+ </div>
+
+</div>
+
+</aside>
+
+
+</body>
+</html>
