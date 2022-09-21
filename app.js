@@ -29,7 +29,10 @@ app.get("/", (req,res) => {
 	res.render("index");
 })
 
+ const port = process.env.PORT || 3000;
+
+
 // run server
-app.listen(8080, () => {
-	console.log("Servidor rodando com sucesso!!");
-})
+ app.listen(port, () => {
+      console.info("Aplicação rodando  em http/localhost:3000 ");
+ })
